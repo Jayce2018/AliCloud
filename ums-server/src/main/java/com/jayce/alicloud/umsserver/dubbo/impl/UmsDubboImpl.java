@@ -1,6 +1,7 @@
 package com.jayce.alicloud.umsserver.dubbo.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.jayce.alicloud.umsserver.common.base.BaseService;
 import com.jayce.alicloud.umsserver.common.properties.EnvironmentProperties;
 import com.jayce.alicloud.umsserver.dao.LibraryBookMapper;
 import com.jayce.alicloud.umsserver.dubbo.DubboService;
@@ -14,7 +15,7 @@ import java.util.List;
 @Slf4j
 @Service(version = "1.0.1",group = "sa")
 @org.springframework.stereotype.Service
-public class UmsDubboImpl implements DubboService {
+public class UmsDubboImpl extends BaseService<LibraryBookMapper, LibraryBook> implements DubboService {
     @Autowired
     private LibraryBookMapper libraryBookMapper;
 
@@ -23,9 +24,8 @@ public class UmsDubboImpl implements DubboService {
 
     @Override
     public List<LibraryBook> umsDubbo() {
-        List<LibraryBook> libraryBooks = libraryBookMapper.selectAll();
-        log.info("umsDubbo调用"+"dubbo");
-        return libraryBooks;
+        log.info("版本信息：{}{}","1.0.1","sa");
+        return libraryBookMapper.selectAll();
     }
 
     @Override

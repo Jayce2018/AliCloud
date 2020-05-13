@@ -1,12 +1,11 @@
 package com.jayce.alicloud.umsserver.entity;
 
-import tk.mybatis.mapper.common.Mapper;
-
-import java.util.Date;
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Date;
 
 @Table(name = "library_book")
-public class LibraryBook {
+public class LibraryBook implements Serializable {
     @Id
     @Column(name = "book_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "SELECT LAST_INSERT_ID()")
