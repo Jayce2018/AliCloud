@@ -14,13 +14,6 @@
 
 
     <dependencies>
-        <!--dubbo api-->
-        <dependency>
-            <groupId>com.jayce.alicloud</groupId>
-            <artifactId>dubbo-api</artifactId>
-            <version>${dubbo-api.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

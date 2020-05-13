@@ -18,8 +18,7 @@
     <modules>
         <module>ums-server</module>
         <module>boot-server</module>
-        <module>gateway-servey</module>
-        <module>dubbo-api</module>
+        <module>gateway-server</module>
     </modules>
 
     <properties>
@@ -40,7 +39,7 @@
         <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
         <httpclient.version>4.5.12</httpclient.version>
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
-        <dubbo-api.version>1.0-SNAPSHOT</dubbo-api.version>
+        <ums-server.version>0.0.1-SNAPSHOT</ums-server.version>
     </properties>
 
     <dependencyManagement>

@@ -16,7 +16,7 @@
 
         <!--测试环境,查找keys:dev-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF8&amp;allowMultiQueries=true&amp;serverTimezone=Asia/Shanghai&amp;useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://10.33.70.170:3306/test?useUnicode=true&amp;characterEncoding=UTF8&amp;allowMultiQueries=true&amp;serverTimezone=Asia/Shanghai&amp;useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
                         password="123456">
         </jdbcConnection>

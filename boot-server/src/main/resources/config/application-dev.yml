@@ -26,3 +26,7 @@ boot:
   value:
     name: sunjie
     gender: 男
+
+ums:
+  dubbo:
+    group: su

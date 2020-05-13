@@ -16,8 +16,14 @@
         <!--dubbo api-->
         <dependency>
             <groupId>com.jayce.alicloud</groupId>
-            <artifactId>dubbo-api</artifactId>
-            <version>${dubbo-api.version}</version>
+            <artifactId>ums-server</artifactId>
+            <version>${ums-server.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>*</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>

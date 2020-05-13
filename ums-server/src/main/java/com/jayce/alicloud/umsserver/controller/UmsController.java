@@ -6,7 +6,6 @@ import com.jayce.alicloud.umsserver.dao.LibraryBookMapper;
 import com.jayce.alicloud.umsserver.entity.LibraryBook;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +14,6 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RefreshScope
 @RequestMapping(value = "/ums")
 public class UmsController {
     @Autowired
