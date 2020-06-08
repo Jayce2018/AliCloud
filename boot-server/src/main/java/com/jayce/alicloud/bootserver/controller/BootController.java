@@ -33,15 +33,16 @@ public class BootController {
 
     @RequestMapping(value = "/value",method = {RequestMethod.GET})
     public String method() {
+        log.info("environmentProperties.getGender()-->"+environmentProperties.getGender());
         return environmentProperties.getGender();
     }
 
     @RequestMapping(value = "/dubbo",method = {RequestMethod.GET})
-    public String dubbo() {
+    public List<LibraryBook> dubbo() {
 //        log.info(dubboService.umsDubboConfig());
-//        log.info(dubboService0512sa.umsDubboConfig());
+        log.info(dubboService0512sa.umsDubboConfig());
 
-        List<LibraryBook> books = dubboService.umsDubbo();
-        return "Success";
+        List<LibraryBook> books = dubboService0512sa.umsDubbo();
+        return books;
     }
 }

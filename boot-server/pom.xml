@@ -13,7 +13,6 @@
     <name>boot-server</name>
 
     <dependencies>
-        <!--dubbo api-->
         <dependency>
             <groupId>com.jayce.alicloud</groupId>
             <artifactId>ums-server</artifactId>

@@ -30,8 +30,8 @@ public class UmsController {
 
     @RequestMapping(value = "/value")
     public String method() {
-        log.info("value:"+ environmentProperties.value);
-        return environmentProperties.value;
+        log.info("value:"+ environmentProperties.getValue());
+        return environmentProperties.getValue();
     }
 
     @RequestMapping(value = "/dao")

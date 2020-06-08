@@ -24,13 +24,15 @@ public class UmsDubboImpl extends BaseService<LibraryBookMapper, LibraryBook> im
 
     @Override
     public List<LibraryBook> umsDubbo() {
-        log.info("版本信息：{}{}","1.0.1","sa");
+        String method = Thread.currentThread() .getStackTrace()[1].getMethodName();
+        log.info(method+"版本信息：{}{}","1.0.1","sa");
         return libraryBookMapper.selectAll();
     }
 
     @Override
     public String umsDubboConfig() {
-        log.info("版本信息：{}{}","1.0.1","sa");
+        String method = Thread.currentThread() .getStackTrace()[1].getMethodName();
+        log.info(method+"版本信息：{}{}","1.0.1","sa");
         return JSONObject.toJSONString(environmentProperties);
     }
 }
