@@ -36,7 +36,7 @@
         <mapper-spring-boot-starter.version>2.1.5</mapper-spring-boot-starter.version>
         <fastjson.version>1.2.33</fastjson.version>
         <druid.version>1.1.21</druid.version>
-        <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.28</mysql-connector-java.version>
         <httpclient.version>4.5.12</httpclient.version>
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <ums-server.version>0.0.1-SNAPSHOT</ums-server.version>
